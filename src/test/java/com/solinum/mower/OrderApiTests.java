@@ -25,7 +25,7 @@ public class OrderApiTests {
                 .port(port)
            .when()
                 .contentType(ContentType.JSON)
-                .body("{\"posAbs\":1,\"posOrd\":2,\"dir\":\"N\",\"orders\":\"GAGAGAGAA\"}")
+                .body("{\"mower\":{\"posAbs\":1,\"posOrd\":2,\"dir\":\"N\"},\"orders\":\"GAGAGAGAA\",\"grass\":{\"topRight\":5,\"lowerLeft\":5}}")
                 .post("/order")
            .then()
               .statusCode(200);
