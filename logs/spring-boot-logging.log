@@ -1,0 +1,102 @@
+2018-11-25 18:41:34.173  INFO 6616 --- [main] com.solinum.mower.MowerApplication       : Starting MowerApplication on MEDAZIZ-PC with PID 6616 (started by Med Aziz in C:\Users\Med Aziz\Documents\GitHub\mower)
+2018-11-25 18:41:34.183  INFO 6616 --- [main] com.solinum.mower.MowerApplication       : No active profile set, falling back to default profiles: default
+2018-11-25 18:41:37.640  INFO 6616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-25 18:41:37.688  INFO 6616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-25 18:41:37.690  INFO 6616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-25 18:41:37.705  INFO 6616 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\gradle-4.9\bin;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\;C:\Users\Med Aziz\AppData\Local\Microsoft\WindowsApps;C:\Users\Med Aziz\AppData\Local\Yarn\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Roaming\npm;C:\Users\Med Aziz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Local\GitHubDesktop\bin;.]
+2018-11-25 18:41:38.007  INFO 6616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-25 18:41:38.008  INFO 6616 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3684 ms
+2018-11-25 18:41:38.073  INFO 6616 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-25 18:41:38.085  INFO 6616 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-25 18:41:38.086  INFO 6616 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-25 18:41:38.086  INFO 6616 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-25 18:41:38.087  INFO 6616 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-25 18:41:38.168  WARN 6616 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\Users\Med Aziz\Documents\GitHub\mower\target\classes\com\solinum\mower\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderService' defined in file [C:\Users\Med Aziz\Documents\GitHub\mower\target\classes\com\solinum\mower\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.solinum.mower.dto.request.OrderRequest' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-11-25 18:41:38.174  INFO 6616 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-11-25 18:41:38.296  INFO 6616 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-25 18:41:38.538 ERROR 6616 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.solinum.mower.OrderService required a bean of type 'com.solinum.mower.dto.request.OrderRequest' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.solinum.mower.dto.request.OrderRequest' in your configuration.
+
+2018-11-25 18:43:33.700  INFO 3904 --- [main] com.solinum.mower.MowerApplication       : Starting MowerApplication on MEDAZIZ-PC with PID 3904 (started by Med Aziz in C:\Users\Med Aziz\Documents\GitHub\mower)
+2018-11-25 18:43:33.717  INFO 3904 --- [main] com.solinum.mower.MowerApplication       : No active profile set, falling back to default profiles: default
+2018-11-25 18:43:36.210  INFO 3904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-25 18:43:36.239  INFO 3904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-25 18:43:36.239  INFO 3904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-25 18:43:36.250  INFO 3904 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\gradle-4.9\bin;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\;C:\Users\Med Aziz\AppData\Local\Microsoft\WindowsApps;C:\Users\Med Aziz\AppData\Local\Yarn\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Roaming\npm;C:\Users\Med Aziz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Local\GitHubDesktop\bin;.]
+2018-11-25 18:43:36.470  INFO 3904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-25 18:43:36.470  INFO 3904 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2623 ms
+2018-11-25 18:43:36.512  INFO 3904 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-25 18:43:36.519  INFO 3904 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-25 18:43:36.520  INFO 3904 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-25 18:43:36.520  INFO 3904 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-25 18:43:36.520  INFO 3904 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-25 18:43:36.905  INFO 3904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-25 18:43:37.256  INFO 3904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-25 18:43:37.263  INFO 3904 --- [main] com.solinum.mower.MowerApplication       : Started MowerApplication in 4.867 seconds (JVM running for 6.973)
+2018-11-25 18:43:43.837  INFO 3904 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-25 18:43:43.838  INFO 3904 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-25 18:43:43.850  INFO 3904 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2018-11-25 18:43:44.029  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : OrderService{mower=Mower{Coordinate{abs=1, ord=2}, initDirection=N}, orders='GAGAGAGAA', grass=Grass{topRight=5, lowerLeft=5}}
+2018-11-25 18:43:44.030  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Newest initDirection=W
+2018-11-25 18:43:44.030  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Mower{Coordinate{abs=0, ord=2}, initDirection=W}
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Newest initDirection=S
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Mower{Coordinate{abs=0, ord=1}, initDirection=S}
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Newest initDirection=E
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Mower{Coordinate{abs=1, ord=1}, initDirection=E}
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Newest initDirection=N
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Mower{Coordinate{abs=1, ord=2}, initDirection=N}
+2018-11-25 18:43:44.031  INFO 3904 --- [http-nio-8080-exec-2] com.solinum.mower.OrderService           : Mower{Coordinate{abs=1, ord=3}, initDirection=N}
+2018-11-25 18:51:47.455  INFO 6880 --- [main] com.solinum.mower.MowerApplication       : Starting MowerApplication on MEDAZIZ-PC with PID 6880 (started by Med Aziz in C:\Users\Med Aziz\Documents\GitHub\mower)
+2018-11-25 18:51:47.469  INFO 6880 --- [main] com.solinum.mower.MowerApplication       : No active profile set, falling back to default profiles: default
+2018-11-25 18:51:49.889  INFO 6880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-25 18:51:49.918  INFO 6880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-25 18:51:49.918  INFO 6880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-25 18:51:49.929  INFO 6880 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\gradle-4.9\bin;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Med Aziz\AppData\Local\Programs\Python\Python37-32\;C:\Users\Med Aziz\AppData\Local\Microsoft\WindowsApps;C:\Users\Med Aziz\AppData\Local\Yarn\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Roaming\npm;C:\Users\Med Aziz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Med Aziz\AppData\Local\GitHubDesktop\bin;.]
+2018-11-25 18:51:50.139  INFO 6880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-25 18:51:50.139  INFO 6880 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2548 ms
+2018-11-25 18:51:50.184  INFO 6880 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-25 18:51:50.192  INFO 6880 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-25 18:51:50.192  INFO 6880 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-25 18:51:50.192  INFO 6880 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-25 18:51:50.193  INFO 6880 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-25 18:51:50.548  INFO 6880 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-25 18:51:50.923  INFO 6880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-25 18:51:50.929  INFO 6880 --- [main] com.solinum.mower.MowerApplication       : Started MowerApplication in 4.765 seconds (JVM running for 6.796)
+2018-11-25 18:52:01.295  INFO 6880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-25 18:52:01.296  INFO 6880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-25 18:52:01.307  INFO 6880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2018-11-25 18:52:01.454  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.OrderService           : OrderService{mower=Mower{Coordinate{abs=1, ord=2}, initDirection=N}, orders='GAGAGAGAA', grass=Grass{topRight=5, lowerLeft=5}}
+2018-11-25 18:52:01.455  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Newest initDirection=W
+2018-11-25 18:52:01.455  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=0, ord=2}, initDirection=W}
+2018-11-25 18:52:01.455  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Newest initDirection=S
+2018-11-25 18:52:01.455  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=0, ord=1}, initDirection=S}
+2018-11-25 18:52:01.456  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Newest initDirection=E
+2018-11-25 18:52:01.456  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=1, ord=1}, initDirection=E}
+2018-11-25 18:52:01.456  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Newest initDirection=N
+2018-11-25 18:52:01.456  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=1, ord=2}, initDirection=N}
+2018-11-25 18:52:01.456  INFO 6880 --- [http-nio-8080-exec-1] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=1, ord=3}, initDirection=N}
+2018-11-25 18:52:44.272  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.OrderService           : OrderService{mower=Mower{Coordinate{abs=3, ord=3}, initDirection=E}, orders='AADAADADDA', grass=Grass{topRight=5, lowerLeft=5}}
+2018-11-25 18:52:44.272  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=4, ord=3}, initDirection=E}
+2018-11-25 18:52:44.272  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=5, ord=3}, initDirection=E}
+2018-11-25 18:52:44.273  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Newest initDirection=S
+2018-11-25 18:52:44.273  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=5, ord=2}, initDirection=S}
+2018-11-25 18:52:44.273  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=5, ord=1}, initDirection=S}
+2018-11-25 18:52:44.273  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Newest initDirection=W
+2018-11-25 18:52:44.274  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=4, ord=1}, initDirection=W}
+2018-11-25 18:52:44.274  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Newest initDirection=N
+2018-11-25 18:52:44.274  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Newest initDirection=E
+2018-11-25 18:52:44.274  INFO 6880 --- [http-nio-8080-exec-3] com.solinum.mower.dto.Mower              : Mower{Coordinate{abs=5, ord=1}, initDirection=E}
