@@ -1,6 +1,7 @@
 package com.solinum.mower;
 
 import com.solinum.mower.dto.Direction;
+import com.solinum.mower.dto.Grass;
 import com.solinum.mower.dto.Mower;
 import com.solinum.mower.dto.request.OrderRequest;
 
@@ -13,6 +14,7 @@ public class OrderService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private Mower mower;
     private String orders;
+    private Grass grass;
 
     public OrderService() {
     }
@@ -22,6 +24,7 @@ public class OrderService {
         return "OrderService{" +
                 "mower=" + mower +
                 ", orders='" + orders + '\'' +
+                ", grass=" + grass +
                 '}';
     }
 
@@ -68,20 +71,48 @@ public class OrderService {
         return initDirection;
     }
 
+    public Mower nextStep(int topRight, int lowerLeft, Mower mower){
+        switch (mower.getInitDirection().toString()){
+            case "N":
+                if (mower.getOrd()>=0){
+                    mower.setOrd(mower.getOrd()+1);
+                }
+                logger.info(mower.toString());
+                break;
+            case "S":
+                if (mower.getOrd()<lowerLeft){
+                    mower.setOrd(mower.getOrd()-1);
+                }
+                logger.info(mower.toString());
+                break;
+            case "W":
+                if (mower.getAbs()>=0){
+                    mower.setAbs(mower.getAbs()-1);
+                }
+                logger.info(mower.toString());
+                break;
+            case "E":
+                if (mower.getAbs()<topRight){
+                    mower.setAbs(mower.getAbs()+1);
+                }
+                logger.info(mower.toString());
+                break;
+        }
+        return mower;
+    }
+
     public Mower executeOrder(OrderRequest orderRequest){
         mower = new Mower(orderRequest.mower.posAbs, orderRequest.mower.posOrd, Direction.valueOf(orderRequest.mower.dir));
         this.orders = orderRequest.orders;
+        grass = new Grass(orderRequest.grass.topRight, orderRequest.grass.lowerLeft);
         logger.info(this.toString());
         for (int i=0; i<this.orders.length(); i++){
             if (this.orders.charAt(i) == 'G' || this.orders.charAt(i) == 'D'){
                 // Change Direction of th mower
                 mower.setInitDirection(changeDirection(this.orders.charAt(i), mower.getInitDirection()));
             } else if (orderRequest.orders.charAt(i) == 'A'){
-                /*
-                *   // ToDo
-                *   Advance the mower
-                *
-                * */
+                // Advance the mower
+                mower = nextStep(grass.getTopRight(), grass.getLowerLeft(), mower);
             }
         }
         return mower;
