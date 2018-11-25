@@ -1,18 +1,25 @@
 package com.solinum.mower;
 
-import org.springframework.stereotype.Service;
+import com.solinum.mower.dto.Direction;
+import com.solinum.mower.dto.Mower;
+import com.solinum.mower.dto.request.OrderRequest;
 
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 @Service
 public class OrderService {
-    public static final Logger LOGGER = Logger.getLogger(OrderService.class.getName());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private String orders;
+    private Mower mower;
 
     public OrderService() {
     }
 
-    public void executeOrder(OrderRequest orderRequest){
+    public Mower executeOrder(OrderRequest orderRequest){
+        mower = new Mower(orderRequest.mower.posAbs, orderRequest.mower.posOrd, Direction.valueOf(orderRequest.mower.dir));
+        logger.info(mower.toString());
         for (int i=0; i<orderRequest.orders.length(); i++){
             if (orderRequest.orders.charAt(i) == 'G' || orderRequest.orders.charAt(i) == 'D'){
                 /*
@@ -28,5 +35,6 @@ public class OrderService {
                 * */
             }
         }
+        return mower;
     }
 }

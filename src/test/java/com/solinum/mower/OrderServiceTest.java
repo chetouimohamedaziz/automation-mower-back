@@ -1,5 +1,8 @@
 package com.solinum.mower;
 
+import com.solinum.mower.dto.request.GrassRequest;
+import com.solinum.mower.dto.request.MowerRequest;
+import com.solinum.mower.dto.request.OrderRequest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,13 +20,15 @@ public class OrderServiceTest {
     @Test
     public void executeOrder() {
         //given
-        OrderRequest orderRequest =new OrderRequest();
-        orderRequest.posAbs = 1;
-        orderRequest.posOrd = 2;
-        orderRequest.dir = "N";
+        MowerRequest mowerRequest = new MowerRequest();
+        mowerRequest.posAbs = 1;
+        mowerRequest.posOrd = 2;
+        mowerRequest.dir = "N";
+        OrderRequest orderRequest = new OrderRequest();
         orderRequest.orders = "GAGAGAGAA";
-        orderRequest.topRight = 5;
-        orderRequest.lowerLeft = 5;
+        GrassRequest grassRequest = new GrassRequest();
+        grassRequest.topRight = 5;
+        grassRequest.lowerLeft = 5;
 
         //then
         orderService.executeOrder(orderRequest);

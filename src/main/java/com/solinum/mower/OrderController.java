@@ -1,12 +1,10 @@
 package com.solinum.mower;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.solinum.mower.dto.Mower;
+import com.solinum.mower.dto.request.OrderRequest;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/order")
 public class OrderController {
     private OrderService orderService;
 
@@ -14,8 +12,9 @@ public class OrderController {
         this.orderService = orderService;
     }
 
-    @PostMapping
-    public void order(@RequestBody OrderRequest orderRequest){
-        orderService.executeOrder(orderRequest);
+    @PostMapping("/order")
+    @ResponseBody
+    public Mower order(@RequestBody OrderRequest orderRequest){
+        return orderService.executeOrder(orderRequest);
     }
 }
