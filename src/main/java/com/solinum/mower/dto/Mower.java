@@ -20,7 +20,7 @@ public class Mower extends Coordinate {
     public String toString() {
         return "Mower{" +
                 super.toString() +
-                "initDirection=" + initDirection +
+                ", initDirection=" + initDirection +
                 '}';
     }
 }
