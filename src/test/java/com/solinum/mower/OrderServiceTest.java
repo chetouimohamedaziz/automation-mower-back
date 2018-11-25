@@ -1,5 +1,6 @@
 package com.solinum.mower;
 
+import com.solinum.mower.dto.Mower;
 import com.solinum.mower.dto.request.GrassRequest;
 import com.solinum.mower.dto.request.MowerRequest;
 import com.solinum.mower.dto.request.OrderRequest;
@@ -11,6 +12,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class OrderServiceTest {
